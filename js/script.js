@@ -1,9 +1,10 @@
 $(document).ready(function(){
+
+  // slick slider start
     $('.slick_container').slick(
         {
             slidesToShow: 3,
             slidesToScroll: 1,
-            dots: true,
             autoplay: true,
             autoplaySpeed: 2000,
             responsive: [
@@ -35,5 +36,33 @@ $(document).ready(function(){
             ]
         }
     );
+  // slick slider end
+
+  // Owl carousel start
+  $('.owl-carousel').owlCarousel({
+    items: 2,
+    margin: 50,
+    loop: true,
+    responsiveClass: true,
+    responsive: {
+      1024:{
+        items: 2
+      },
+
+      991:{
+        items: 2
+      },
+
+      767: {
+        items: 1
+      },
+
+      575: {
+        items: 1
+      }
+      
+    }
+  })
+  // Owl carousel end
 
 })
