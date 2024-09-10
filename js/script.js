@@ -65,4 +65,36 @@ $(document).ready(function(){
   })
   // Owl carousel end
 
+  // load more start
+  $('.some-list').simpleLoadMore({
+    item: 'div',
+    count: 4,
+    counterInBtn: true,
+    btnText: 'View More {showing}/{total}',
+  })
+  // load more end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 })
