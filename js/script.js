@@ -74,6 +74,10 @@ $(document).ready(function(){
   })
   // load more end
 
+  // lightbox start
+  var gallery = $('.gallery a').simpleLightbox({navText:    ['&lsaquo;','&rsaquo;']});
+  // lightbox end
+
 
 
 
