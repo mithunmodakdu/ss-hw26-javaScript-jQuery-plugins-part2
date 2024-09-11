@@ -78,6 +78,42 @@ $(document).ready(function(){
   var gallery = $('.gallery a').simpleLightbox({navText:    ['&lsaquo;','&rsaquo;']});
   // lightbox end
 
+// line graph start
+  var songs = {
+    "Mon" : 80,
+    "Tues": 40,
+    "Wed" : 60,
+    "Thu" : 80,
+    "Fri": 40,
+    "Sat" : 60,
+};
+
+$('.line_graph_songs').graphiq({
+  data: songs,
+  colorLine: "#d3a2ef",
+  colorDot: "#c3ecf7",
+  colorXGrid: "#7f7f7f",
+  colorYGrid: "#7f7f7f",
+  colorLabels: "#FFFFFF",
+  colorUnits: "#FFFFFF",
+  colorRange: "#FFFFFF",
+  colorFill: "#533c68",
+  colorDotStroke: "#FFFFFF",
+  dotStrokeWeight: 0,
+  fillOpacity: 0.25,
+  rangeOpacity: 0.5,
+  dotRadius: 3,
+  lineWeight: 2,
+  yLines: true,
+  dots: true,
+  xLines: true,
+  xLineCount: 5,
+  fill: true,
+  height: 100,
+  fluidParent: null
+});
+// line graph end
+
 
 
 
